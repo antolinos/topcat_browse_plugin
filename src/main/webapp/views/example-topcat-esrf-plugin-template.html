@@ -1,0 +1,45 @@
+
+
+<div class="container">
+  <h2>Basic Table</h2>
+  <p>The .table class adds basic styling (light padding and only horizontal dividers) to a table:</p>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Mary</td>
+        <td>Moe</td>
+        <td>mary@example.com</td>
+      </tr>
+      <tr>
+        <td>July</td>
+        <td>Dooley</td>
+        <td>july@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+
+<br>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-sm-12">
+			<button ng-click="exampleTopcatEsrfPluginController.hello()">Filter</button>
+			<h4 ng-repeat="dataset in exampleTopcatEsrfPluginController.datasets | filter:{ name: 'Dataset 2' }" ><input type="text" ng-model="dataset.name" >{{dataset.name}}</h4>
+
+			<h2 ng-repeat="dataset in exampleTopcatEsrfPluginController.datasets | filter:{ name: 'Dataset 1' }" ><input type="text" ng-model="dataset.name" >{{dataset.name}}</h2>
+		</div>
+	</div>
+</div>
