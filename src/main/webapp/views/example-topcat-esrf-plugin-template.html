@@ -36,8 +36,8 @@
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-sm-12">
-			<button ng-click="exampleTopcatEsrfPluginController.hello()">Filter</button>
 			<h4 ng-repeat="dataset in exampleTopcatEsrfPluginController.datasets | filter:{ name: 'Dataset 2' }" ><input type="text" ng-model="dataset.name" >{{dataset.name}}</h4>
+			<button ng-click="exampleTopcatEsrfPluginController.hello()">Filter</button>
 
 			<h2 ng-repeat="dataset in exampleTopcatEsrfPluginController.datasets | filter:{ name: 'Dataset 1' }" ><input type="text" ng-model="dataset.name" >{{dataset.name}}</h2>
 		</div>

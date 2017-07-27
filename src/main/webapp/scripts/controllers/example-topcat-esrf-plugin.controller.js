@@ -12,15 +12,17 @@
 	this.datasets = [];
 	this.message = "Preloading"
 
-	tc.icat('LILS').query([
-	    "select ds from Dataset ds LEFT JOIN ds.parameters p"
+	tc.icat('ESRF').query([
+//	    "select ds from Dataset ds LEFT JOIN ds.parameters p"
+	    "select sample from Sample sample"
 	], 
 	{
 	    cache: false,
 	    timeout: false
-	}).then(function(datasets){
-	   	_this.message = datasets;
-		_this.datasets = datasets;
+	}).then(function(sample){
+	   	_this.message = sample;
+		_this.datasets = sample;
+		console.log(sample);
 	});
     
 

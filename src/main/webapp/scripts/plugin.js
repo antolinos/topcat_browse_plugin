@@ -13,26 +13,27 @@ registerTopcatPlugin(function(pluginUrl){
 		},
 
 		setup: function($uibModal, tc){
+
 			
 			tc.ui().registerMainTab('topcat-esrf-plugin', pluginUrl + 'views/example-topcat-esrf-plugin-template.html', {
 				insertAfter: 'my-data',
 				controller: 'ExampleTopcatEsrfPluginController as exampleTopcatEsrfPluginController'
 			});
 			
-			tc.ui().registerCartButton('topcat-esrf-plugin', {insertBefore: 'cancel'}, function(){
+			/*tc.ui().registerCartButton('topcat-browse-plugin', {insertBefore: 'cancel'}, function(){
 				$uibModal.open({
 				    templateUrl : pluginUrl + 'views/example-topcat-esrf-plugin-template.html',
 				    controller: 'ExampleTopcatEsrfPluginController as exampleTopcatEsrfPluginController',
 				    size : 'sm'
 				});
-			});
+			});*/
 
-			tc.ui().registerEntityActionButton('topcat-esrf-plugin', function(){
+			tc.ui().registerEntityActionButton('topcat-browse-plugin', function(){
 				alert("Hello World!");
 			});
 		
 		    tc.ui().registerExternalGridFilter(['myData','browse'], {
-			template: '<div>Hello World -- </div>',
+			template: '',
 			setup: function(){ console.log('setting up filter...'); },
 			modifyQuery: function(query){ console.log('modifying query...'); }
 		    });

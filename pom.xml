@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>org.icatproject</groupId>
-	<artifactId>topcat_esrf_plugin</artifactId>
+	<artifactId>topcat_browse_plugin</artifactId>
 	<packaging>war</packaging>
 	<version>0.1.0-SNAPSHOT</version>
-	<name>topcat_esrf_plugin</name>
+	<name>topcat_browse_plugin</name>
 	<description>Topcat Plugin</description>
 
 	<build>
